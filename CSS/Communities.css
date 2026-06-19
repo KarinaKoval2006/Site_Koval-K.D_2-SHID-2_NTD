@@ -1,0 +1,969 @@
+*{
+    margin: 0; padding: 0;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+body{
+    background-color: #181C21;
+}
+
+section{
+    margin-top: 72px;
+}
+
+h1{
+    font-family: "Spectral", serif;
+    font-size: 60px;
+    font-weight: bold;
+    color: #E7E3FC;
+}
+
+h3{
+    font-family: "Inter", sans-serif;
+    font-size: 22px;
+    color: #E7E3FC;
+    margin-bottom: 0;
+}
+
+h4{
+    font-family: "Inter", sans-serif;
+    font-size: 22px;
+    color: #E7E3FC;
+    margin-bottom: 16px;
+}
+
+p{
+    font-family: "Inter", sans-serif;
+    font-weight: lighter;
+    font-size: 22px;
+    color: #E7E3FC;
+    margin: 0;
+    line-height: 28px;
+}
+
+
+
+
+
+
+
+
+.go-top {
+  position: fixed;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  display: none;
+  font-size: 20px;
+  color: #D4A47C;
+  border: 1px solid #D4A47C;
+  border-radius: 10px;
+  background-color: transparent;
+  padding: 15px 10px;
+}
+
+.go-top:hover {
+  color: #181C21;
+  border: 1px solid #D4A47C;
+  background-color: #D4A47C;
+}
+
+.go-top--show {
+  display: block;
+}
+
+
+
+
+
+
+
+
+.logo{
+    font-family: "Spectral", serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #D4A47C;
+    text-decoration: none;
+}
+
+.logo_2{
+    font-family: "Spectral", serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #D4A47C;
+    text-decoration: none;
+    display: none;
+}
+
+.logo:hover{
+    color: #D4A47C;
+}
+
+.logo_2:hover{
+    color: #D4A47C;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    gap: 55px;
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+.a{
+    text-decoration: none;
+    color: #E7E3FC;
+    font-family: "Inter", sans-serif;
+    font-weight: lighter;
+}
+
+.a:hover{
+    color: #D4A47C;
+}
+
+.nuv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 90%;
+}
+
+header{
+    background-color: #30323E;
+    padding: 30px 0;
+}
+
+.nav-link {
+    padding: 0;
+    color: #E7E3FC;
+    font-family: "Inter", sans-serif;
+    font-weight: lighter;
+    transition: none;
+}
+
+.nav-link:hover {
+    color: #D4A47C;
+}
+
+.nav-link:focus{
+    color: #D4A47C;
+}
+
+.navbar{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.dropdown-menu {
+    color: #E7E3FC;
+    background-color: #30323E;
+    border: 1px solid #D4A47C;
+    border-radius: 12px;
+}
+
+.dropdown-item {
+    color: #E7E3FC;
+    transition: 0.2s ease;
+}
+
+.dropdown-item:focus, .dropdown-item:hover {
+    color: #30323E;
+    background-color: #D4A47C;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #E7E3FC;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover{
+    color: #D4A47C;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.navbar-toggler {
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+.navbar-toggler {
+    border-color: #D4A47C;
+    padding: 8px 12px;
+}
+
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 2px rgba(212, 164, 124, 0.5);
+}
+
+.navbar-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1040;
+}
+
+.navbar-overlay.active {
+    display: block;
+}
+
+
+
+
+
+
+
+.first-block{
+    border: 2px solid rgba(231, 227, 252, 0.35);
+    padding: 45px;
+    margin-top: 72px;
+    margin-bottom: 100px;
+}
+
+.btn-primary {
+    color: #181C21;
+    background-color: #E7E3FC;
+    border-color: #E7E3FC;
+    border-radius: 0%;
+}
+
+.btn-primary:hover {
+    color: #181C21;
+    background-color: #D4A47C;
+    border-color: #D4A47C;
+}
+
+.btn-primary:focus {
+    color: #181C21;
+    background-color: #D4A47C;
+    border-color: #D4A47C;
+}
+
+.btn-group-sm>.btn, .btn-sm {
+    padding: 16px 85px;
+    font-size: 20PX;
+}
+
+.btn-secondary {
+    color: #E7E3FC;
+    background-color: #181C21;
+    border-color: #181C21;
+    border-radius: 0%;
+}
+
+.btn-secondary:hover {
+    color: #181C21;
+    background-color: #D4A47C;
+    border-color: #D4A47C;
+}
+
+.btn-secondary:focus {
+    color: #181C21;
+    background-color: #D4A47C;
+    border-color: #D4A47C;
+}
+
+button{
+    margin-bottom: 45px;
+}
+
+.card {
+    background-color: #181C21;
+    border: 2px solid rgba(231, 227, 252, 0.35);
+    border-radius: 0%;
+    padding: 43px;
+}
+
+.cards a{
+   text-decoration: none; 
+}
+
+.cards .card:hover{
+    background-color: rgba(231, 227, 252, 0.111);
+    border: 2px solid #D4A47C;
+    transition: 0.2s ease;
+}
+
+.card-body{
+    padding: 0;
+    padding-left: 25px;
+    padding-top: 10px;
+    width: 100%;
+    padding-top: 0;
+}
+
+.row {
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.card-title{
+    font-family: "Inter", sans-serif;
+    font-size: 24px;
+    color: #E7E3FC;
+    font-weight: 300;
+    margin-bottom: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+}
+
+.card-text{
+    margin-bottom: 15px;
+}
+
+.mb-3 {
+    margin-bottom: 25px !important;
+}
+
+.img{
+    width: 60px;
+    height: 60px;
+}
+
+.col-md-4 {
+    width: 123px;
+}
+
+
+
+
+
+
+
+
+footer{
+    background-color: #30323E;
+    padding: 60px 0;
+}
+
+.nuv-f{
+    margin: 0 auto;
+    width: 90%;
+}
+
+ol{
+    list-style-type: none;
+    font-size: 20px;
+    padding: 0;
+}
+
+.ol_tg{
+    display: flex;
+    gap: 25px;
+}
+
+.nuv-f-1{
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+#logo-2{
+    display: flex;
+    align-items: center;
+    font-size: 28px;
+}
+
+#logo-3{
+    font-size: 28px;
+}
+
+.polit{
+    margin-top: 43px;
+    display: flex;
+    gap: 25px;
+}
+
+.tg{
+    background-image: url(../Imag/tg.png);
+    object-fit: cover;
+    transition: 0.2s ease;
+    width: 58px;
+    height: 58px;
+    cursor: pointer;
+}
+
+.tg:hover{
+    background-image: url(../Imag/tg-1.png);
+}
+
+.vk{
+    background-image: url(../Imag/vk.png);
+    object-fit: cover;
+    transition: 0.2s ease;
+    width: 58px;
+    height: 58px;
+    cursor: pointer;
+}
+
+.vk:hover{
+    background-image: url(../Imag/vk-1.png);
+}
+
+.tt{
+    background-image: url(../Imag/tt.png);
+    object-fit: cover;
+    transition: 0.2s ease;
+    width: 58px;
+    height: 58px;
+    cursor: pointer;
+}
+
+.tt:hover{
+    background-image: url(../Imag/tt-1.png);
+}
+
+.footer_2{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 769px) and (max-width: 992px) {
+    .container{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    section{
+        margin-top: 72px;
+    }
+
+    h1{
+        font-size: 52px;
+    }
+
+    h3{
+        font-size: 20px;
+    }
+
+    h4{
+        font-size: 20px;
+    }
+
+    p{
+        font-size: 20px;
+    }
+
+    .nuv{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .first-block{
+        margin-top: 72px;
+        margin-bottom: 72px;
+        padding: 40px;
+    }
+
+    .buttones{
+        display: flex;
+        gap: 24px;
+    }
+
+    .btn-primary{
+        font-size: 18px;
+        width: 100%;
+    }
+
+    .btn-secondary{
+        font-size: 18px;
+        width: 100%;
+    }
+
+    .btn-group-sm>.btn, .btn-sm {
+        padding: 16px 60px;
+    }
+
+    .card-title {
+        max-width: 300px;
+    }
+
+    .card-body {
+        font-size: 20px;
+    }
+
+    .img{
+        width: 55px;
+        height: 55px;
+    }
+
+    .col-md-4 {
+        width: 100px;
+    }
+
+    .rounded-start{
+        width: 100px;
+    }
+
+    .nuv-f{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    #logo-2{
+        font-size: 24px;
+    }
+
+    ol{
+        font-size: 18px;
+    }
+
+    .ol_tg{
+        gap: 20px;
+    }
+
+    .tg{
+        width: 50px;
+        height: 50px;
+        background-size: cover;
+    }
+
+    .vk{
+        width: 50px;
+        height: 50px;
+        background-size: cover;
+    }
+
+    .tt{
+        width: 50px;
+        height: 50px;
+        background-size: cover;
+    }
+}
+
+@media (min-width: 375px) and (max-width: 769px) {
+    .container{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    section{
+        margin-top: 60px;
+    }
+
+    h1{
+        font-size: 44px;
+    }
+
+    h3{
+        font-size: 18px;
+    }
+
+    h4{
+        font-size: 18px;
+    }
+
+    p{
+        font-size: 18px;
+    }
+
+    .logo_2{
+        display: block;
+    }
+
+    .logo{
+        display: none;
+    }
+    
+    .nuv{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .first-block{
+        margin-top: 60px;
+        margin-bottom: 60px;
+        padding: 32px;
+    }
+
+    .buttones{
+        display: flex;
+        gap: 16px;
+    }
+
+    .btn-primary{
+        font-size: 18px;
+        width: 100%;
+        margin-bottom: 24px;
+    }
+
+    .btn-secondary{
+        font-size: 18px;
+        width: 100%;
+        margin-bottom: 24px;
+    }
+
+    .btn-group-sm>.btn, .btn-sm {
+        padding: 16px 8px;
+    }
+
+    .card-title {
+        max-width: 130px;
+    }
+
+    .card{
+        padding: 24px;
+    }
+
+    .mb-3{
+        margin-bottom: 16px !important;
+    }
+
+    .card-body {
+        font-size: 18px;
+        padding-left: 16px;
+    }
+
+    .img{
+        width: 40px;
+        height: 40px;
+    }
+
+    .col-md-4 {
+        width: 80px;
+    }
+
+    .rounded-start{
+        width: 80px;
+    }
+
+    .card-text{
+        margin-bottom: 10px;
+    }
+
+    .nuv-f{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    #logo-2{
+        display: none;
+    }
+
+    #logo-3{
+        display: block;
+    }
+
+    ol{
+        font-size: 18px;
+        gap: 20;
+    }
+
+    .ol_tg{
+        gap: 20px;
+    }
+
+    .tg{
+        width: 40px;
+        height: 40px;
+        background-size: cover;
+    }
+
+    .vk{
+        width: 40px;
+        height: 40px;
+        background-size: cover;
+    }
+
+    .tt{
+        width: 40px;
+        height: 40px;
+        background-size: cover;
+    }
+
+    .footer_2{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .social{
+        display: none;
+    }
+
+    .nuv-f-1{
+        justify-content: flex-start;
+        gap: 40px;
+    }
+
+    .polit{
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .go-top {
+        display: none !important;
+    }
+}
+
+@media (max-width: 375px) {
+    .container{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    section{
+        margin-top: 55px;
+    }
+
+    h1{
+        font-size: 32px;
+    }
+
+    h3{
+        font-size: 16px;
+    }
+
+    h4{
+        font-size: 16px;
+    }
+
+    p{
+        font-size: 16px;
+    }
+
+    .navbar-collapse {
+        width: 280px;
+        right: -280px;
+        padding: 70px 15px 15px 15px;
+    }
+    
+    .navbar-collapse .navbar-nav .nav-link {
+        font-size: 16px;
+        padding: 10px 16px;
+    }
+
+    .first-block{
+        margin-top: 55px;
+        margin-bottom: 55px;
+        padding: 16px;
+    }
+
+    .buttones{
+        display: flex;
+        gap: 8px;
+    }
+
+    .btn-primary{
+        font-size: 16px;
+        width: 100%;
+        margin-bottom: 24px;
+    }
+
+    .btn-secondary{
+        font-size: 16px;
+        width: 100%;
+        margin-bottom: 24px;
+    }
+
+    .btn-group-sm>.btn, .btn-sm {
+        padding: 8px 8px;
+    }
+
+    .card-title {
+        max-width: 150px;
+        font-size: 16px;
+    }
+
+    .card{
+        padding: 16px;
+    }
+
+    .mb-3{
+        margin-bottom: 16px !important;
+    }
+
+    .card-body {
+        padding-left: 16px;
+    }
+
+    .img{
+        width: 24px;
+        height: 24px;
+    }
+
+    .col-md-4 {
+        width: 60px;
+    }
+
+    .rounded-start{
+        width: 60px;
+    }
+
+    .card-text{
+        margin-bottom: 10px;
+    }
+
+    .nuv-f{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    #logo-2{
+        display: none;
+    }
+
+    #logo-3{
+        display: block;
+    }
+
+    ol{
+        font-size: 16px;
+    }
+
+    .ol_tg{
+        gap: 16px;
+    }
+
+    .tg{
+        width: 32px;
+        height: 32px;
+        background-size: cover;
+    }
+
+    .vk{
+        width: 32px;
+        height: 32px;
+        background-size: cover;
+    }
+
+    .tt{
+        width: 32px;
+        height: 32px;
+        background-size: cover;
+    }
+
+    .footer_2{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .social{
+        display: none;
+    }
+
+    .nuv-f-1{
+        justify-content: flex-start;
+        gap: 40px;
+    }
+
+    .polit{
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .logo_2{
+        display: block;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .nuv{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .go-top {
+        display: none !important;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 992px) {
+    .navbar-collapse {
+        position: fixed;
+        top: 0;
+        right: -320px;
+        width: 300px;
+        height: 100vh;
+        background-color: #30323E;
+        padding: 80px 20px 20px 20px;
+        transition: right 0.3s ease;
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.3);
+        overflow-y: auto;
+        z-index: 1050;
+    }
+    
+    .navbar-collapse.show {
+        right: 0;
+    }
+    
+    .navbar-collapse .navbar-nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .navbar-collapse .navbar-nav .nav-item {
+        width: 100%;
+    }
+    
+    .navbar-collapse .navbar-nav .nav-link {
+        padding: 12px 20px;
+        font-size: 18px;
+        border-radius: 8px;
+        transition: 0.2s ease;
+    }
+    
+    .navbar-collapse .navbar-nav .nav-link:hover {
+        background-color: #D4A47C;
+        color: #181C21;
+    }
+    
+    .navbar-collapse .dropdown-menu {
+        position: static !important;
+        transform: none !important;
+        background-color: rgba(48, 50, 62, 0.9);
+        border: 1px solid #D4A47C;
+        border-radius: 8px;
+        margin-top: 5px;
+        width: 100%;
+    }
+    
+    .navbar-collapse .dropdown-menu .dropdown-item {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+    
+    .navbar-collapse.show ~ .navbar-overlay {
+        display: block;
+    }
+}
